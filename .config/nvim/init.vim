@@ -10,6 +10,9 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Gruvbox color scheme
 Plug 'morhetz/gruvbox'
 
+" Remap <Esc>
+inoremap jk <Esc>
+
 call plug#end()
 
 colo gruvbox 
