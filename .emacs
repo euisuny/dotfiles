@@ -15,3 +15,12 @@
 (setq proof-script-fly-past-comments t)
 (setq proof-splash-seen t)
 (setq coq-highlight-hyps-cited-in-response nil)
+
+(use-package company-coq
+	:ensure t
+	:commands (company-coq-mode)
+	:init (add-hook 'coq-mode-hook #'company-coq-mode))
+
+;; VIper
+(setq viper-mode t)
+(require 'viper)
