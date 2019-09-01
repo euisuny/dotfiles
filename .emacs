@@ -24,9 +24,6 @@
 	:commands (company-coq-mode)
 	:init (add-hook 'coq-mode-hook #'company-coq-mode))
 
-;; VIper
-(setq viper-mode t)
-(require 'viper)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -121,4 +118,4 @@
 (autoload 'utop "utop" "Toplevel for OCaml" t)
 (autoload 'utop-minor-mode "utop" "Minor mode for utop" t)
 (add-hook 'tuareg-mode-hook 'utop-minor-mode)
-
+(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
